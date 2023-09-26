@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- Bootstrap 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar-brand {
+            color: white;
+        }
+        .nav-link {
+            color: white;
+        }
+        .nav-link:hover {
+            color: #ccc;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .contact-icon {
+            font-size: 24px;
+            color: #333;
+            margin-right: 10px;
+        }
+        .contact-link {
+            color: #333;
+            text-decoration: none;
+        }
+        .contact-link:hover {
+            color: #666;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <!-- Profile Image -->
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <img src="[profile-image]" alt="[profile-image-alt]" class="profile-image">
+            </div>
+        </div>
+
+        <!-- Name and Description -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6 text-center">
+                <h1>[name]</h1>
+                <p>[description]</p>
+            </div>
+        </div>
+
+        <!-- Contact Methods -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6 text-center">
+                <!-- Email -->
+                <a href="[email]" class="contact-link"><i class="fas fa-envelope contact-icon"></i>[email]</a><br>
+
+                <!-- Phone -->
+                <a href="[phone]" class="contact-link"><i class="fas fa-phone contact-icon"></i>[phone]</a><br>
+
+                <!-- LinkedIn -->
+                <a href="[linkedin]" class="contact-link"><i class="fab fa-linkedin contact-icon"></i>[linkedin]</a><br>
+
+                <!-- GitHub -->
+                <a href="[github]" class="contact-link"><i class="fab fa-github contact-icon"></i>[github]</a><br>
+
+                <!-- Twitter -->
+                <a href="[twitter]" class="contact-link"><i class="fab fa-twitter contact-icon"></i>[twitter]</a><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
