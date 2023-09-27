@@ -80,6 +80,28 @@
             </div>
         </div>
     </nav>
+    That sounds like a great idea! Bootstrap 5 provides a lot of built-in components that can help you achieve your
+    desired layout. Here's how you can create a card with a portrait of a person and a title section that contains the
+    name, details, and contact buttons:
+
+    ```html
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 order-lg-2">
+                <div class="card mb-5 mb-lg-0">
+                    <img class="card-img-top" src="portrait.jpg" alt="Portrait of Person">
+                    <div class="card-body">
+                        <h2 class="card-title">Name of Person</h2>
+                        <p class="card-text">Some details about the person.</p>
+                        <a href="#" class="btn btn-primary">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 order-lg-1">
+                <!-- Empty column -->
+            </div>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <div class="container mt-4">
