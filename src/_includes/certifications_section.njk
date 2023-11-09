@@ -5,7 +5,7 @@
         <div class="container text-center">
         <div class="row justify-content-md-center">
         {% for certificate in cert_data.certificates_details %}
-            <a class="nav-link active card col-sm-12 col-md-3 mx-2" href="{{ certificate.certificate_url }}" target="new">
+            <a class="nav-link active card col-sm-12 col-md-3 mr-2 mb-1" href="{{ certificate.certificate_url }}" target="new">
                 <div class="card-body">
                     <h6 class="badge bg-primary justify-content-end">{{ certificate.issuer+": "+certificate.course_type }}</h6>
                     <h5 class="card-title">{{ certificate.course_title }}</h5>
