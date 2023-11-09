@@ -112,7 +112,7 @@ skills:
         - icon_link: "quarto.svg"
           title: "Quarto"
         - icon_link: "gforms.svg"
-          title: "Google Forms"
+          title: "Google Forms A"
 
     - skill_name: Programming Languages & Tools
       list:
