@@ -4,8 +4,8 @@
   "description": "Portfolio website of DR. Wasikul Amin Bipu, DVM(BSMRAU). This website takes all the information you need in one place.",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass --watch src/scss:dist/styles",
-    "build:sass": "sass src/scss:dist/styles",
+    "watch:sass": "sass --watch src/scss:_site/styles",
+    "build:sass": "sass src/scss:_site/styles",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
