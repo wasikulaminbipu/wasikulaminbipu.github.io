@@ -13,6 +13,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -21,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: "18"
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -30,7 +34,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
         # run: echo Hello, world!
@@ -39,6 +43,8 @@ jobs:
         run: |
           npm ci
           npm run build
+          
+      - uses: actions/upload-pages-artifact@v2
 
       # Runs a set of commands using the runners shell
       - name: Deploy
@@ -49,3 +55,12 @@ jobs:
        # run: |
          # echo Add other actions to build,
         #  echo test, and deploy your project.
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v2
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
