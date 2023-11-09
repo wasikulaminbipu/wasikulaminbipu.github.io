@@ -1,0 +1,7 @@
+{% macro socialItem(iconClass, link ) %}
+{% if link != "" %}
+    <a class="social-icon" href="{{ link }}"><i
+                    class="fab {{ iconClass }}"></i></a>
+{% endif %}
+{% endmacro %}
+

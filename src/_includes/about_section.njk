@@ -1,0 +1,23 @@
+{% macro aboutSection(about_data, social_links) %}
+<section class="resume-section" id="about">
+    <div class="resume-section-content">
+        {# <h1>{{ social_links.facebook }}<h1> #}
+        {# <h1>{{ about_data.title if about_data.title else "Hello" }}</h1> #}
+        <h1 class="mb-0"><span class="text-secondary">{{ about_data.name_prefix }}</span> {{ about_data.first_name }}<span class="text-primary">{{ about_data.last_name }}</span></h1>
+        <div class="subheading mb-5">{{ about_data.address }} · {{ about_data.mobile }} · <a
+                href={{"mailto:" + about_data.email}}>{{ about_data.email | safe }}</a></div>
+        <p class="lead mb-5">{{ about_data.about | safe }}</p>
+        <div class="social-icons">
+            {% from "macro/social_item.njk" import socialItem %}
+            {{ socialItem("fa-linkedin", social_links.linkedin) }}
+            {{ socialItem("fa-github", social_links.github) }}
+            {{ socialItem("fa-twitter", social_links.twitter) }}
+            {{ socialItem("fa-facebook-f", social_links.facebook) }}
+            {{ socialItem("fa-orcid", social_links.orcid) }}
+            {{ socialItem("fa-whatsapp", social_links.whatsapp) }}
+        </div>
+    </div>
+</section>
+<hr class="m-0">
+{% endmacro %}
+

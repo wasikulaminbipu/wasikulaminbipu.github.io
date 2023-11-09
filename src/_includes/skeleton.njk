@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="DR. Wasikul Amin Bipu">
+    <meta name="keywords" content="Portfolio, pfolio, dr bipu, wasikul amin bipu">
+    <meta name="description" content="Description of Dr Bipu">
+    <title>{{ title }}</title>
+    {# Add Fav Icon #}
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" type="text/css">
+</head>
+<body id="page-top">
+    {# {% block nav %}{% endblock nav %} #}
+    <div class="container-fluid p-0">
+        {# {% block about %}{% endblock about %} #}
+        {{ about({{name_prefix}}, {{first_name}}, {{last_name}}, {{address}}, {{mobile}}, {{email}}, {{about}}, {{linkedin}}, {{github}}, {{twitter}}, {{facebook}}, {{orcid}}) }}
+    </div>
+
+</body>
+</html>
