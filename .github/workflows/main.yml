@@ -48,15 +48,16 @@ jobs:
         run: |
           npm ci
           npm run build
-          
-      - uses: actions/upload-pages-artifact@v2
+
+      - name: Upload Page Artifacts
+        uses: actions/upload-pages-artifact@v2
 
       # Runs a set of commands using the runners shell
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_dir: ./dist
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     publish_dir: ./dist
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
        # run: |
          # echo Add other actions to build,
         #  echo test, and deploy your project.
