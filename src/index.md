@@ -24,75 +24,71 @@ about_section:
             visualization with R and also a flutter (Cross platform app engine) developer."
 # Education Section Data
 education_section: 
-    institutional_educations: [
-        {
-            "degree_name": "Doctor of Veterinary Medicine(DVM)",
-            "duration_or_passingyear":"April,2015-April,2020",
-            "institution_or_board":"Bangabandhu Sheikh Mujibur Rahman Agricultural University, Gazipur, Bangladesh",
-            "subject_or_group":"Veterinary Medicine and Animal Science",
-            "result_type":"CGPA",
-            "point":"3.23",
-        },
-        {
-            "degree_name": "Higher-Secondary School Certificate (HSC)",
-            "duration_or_passingyear":"2014",
-            "institution_or_board":"Dhaka Board",
-            "subject_or_group":"Science",
-            "result_type":"GPA",
-            "point":"5.00",
-        },
-        {
-            "degree_name": "Secondary School Certificate (SSC)",
-            "duration_or_passingyear":"2012",
-            "institution_or_board":"Dhaka Board",
-            "subject_or_group":"Science",
-            "result_type":"GPA",
-            "point":"5.00",
-        }
-        
-    ]
+    institutional_educations: 
+      - degree_name: "Doctor of Veterinary Medicine(DVM)"
+        duration_or_passingyear: "April,2015-April,2020"
+        institution_or_board: "Bangabandhu Sheikh Mujibur Rahman Agricultural University, Gazipur, Bangladesh"
+        subject_or_group: "Veterinary Medicine and Animal Science"
+        result_type: "CGPA"
+        point: "3.23"
+
+      - degree_name: "Higher-Secondary School Certificate (HSC)"
+        duration_or_passingyear: "2014"
+        institution_or_board: "Dhaka Board"
+        subject_or_group: "Science"
+        result_type: "GPA"
+        point: "5.00"
+
+      - degree_name: "Secondary School Certificate (SSC)"
+        duration_or_passingyear: "2012"
+        institution_or_board: "Dhaka Board"
+        subject_or_group: "Science"
+        result_type: "GPA"
+        point: "5.00"
+
 certifications_section:
-    certificates_details: [
-        {
-            "course_title": "Statistical Analysis with R for Public Health Specialization",
-            "course_type": "Specialization",
-            "issuer": "Coursera",
-            "institute_name":"Imperial College London",
-            "issue_date":"June, 2023",
-            "exp_date":"",
-            "certificate_url":"https://www.coursera.org/account/accomplishments/specialization/certificate/F28MHV8QF22B",
-        },
-        {
-            "course_title": "
-Understanding Clinical Research: Behind the Statistics (with Honors)",
-            "course_type": "Single Course",
-            "issuer": "Coursera",
-            "institute_name":"University of Cape Town",
-            "issue_date":"July, 2023",
-            "exp_date":"",
-            "certificate_url":"https://www.coursera.org/account/accomplishments/certificate/DAFVPS79CZJU",
-        },
-        {
-            "course_title": "
-Writing in the Sciences (with Honors)",
-            "course_type": "Single Course",
-            "issuer": "Coursera",
-            "institute_name":"Stanford University",
-            "issue_date":"September, 2023",
-            "exp_date":"",
-            "certificate_url":"https://www.coursera.org/account/accomplishments/certificate/E9HEKG7FCS68",
-        },
-        {
-            "course_title": "Introduction to Systematic Review and Meta-Analysis",
-            "course_type": "Single Course",
-            "issuer": "Coursera",
-            "institute_name":"Johns Hopkins University",
-            "issue_date":"September, 2023",
-            "exp_date":"",
-            "certificate_url":"https://www.coursera.org/account/accomplishments/certificate/S9U79FWMLULQ",
-        },
+    certificates_details: 
+      - course_title: "Statistical Analysis with R for Public Health Specialization"
+        course_type: "Specialization"
+        issuer: "Coursera"
+        institute_name: "Imperial College London"
+        issue_date: "June, 2023"
+        exp_date: ""
+        certificate_url: "https://www.coursera.org/account/accomplishments/specialization/certificate/F28MHV8QF22B"
+
+      - course_title: Data Visualization & Dashboarding with R Specialization
+        course_type: "Specialization"
+        issuer: "Coursera"
+        institute_name: "Johns Hopkins University"
+        issue_date: "November, 2023"
+        exp_date: ""
+        certificate_url: "https://www.coursera.org/account/accomplishments/specialization/certificate/JEHMYTAF2Y4M"
+
+      - course_title: "
+Understanding Clinical Research: Behind the Statistics (with Honors)"
+        course_type: "Single Course"
+        issuer: "Coursera"
+        institute_name: "University of Cape Town"
+        issue_date: "July, 2023"
+        exp_date: ""
+        certificate_url: "https://www.coursera.org/account/accomplishments/certificate/DAFVPS79CZJU"
         
-    ]
+      - course_title: "
+Writing in the Sciences (with Honors)"
+        course_type: "Single Course"
+        issuer: "Coursera"
+        institute_name: "Stanford University"
+        issue_date: "September, 2023"
+        exp_date: ""
+        certificate_url: "https://www.coursera.org/account/accomplishments/certificate/E9HEKG7FCS68"
+                
+      - course_title: "Introduction to Systematic Review and Meta-Analysis"
+        course_type: "Single Course"
+        issuer: "Coursera"
+        institute_name: "Johns Hopkins University"
+        issue_date: "September, 2023"
+        exp_date: ""
+        certificate_url: "https://www.coursera.org/account/accomplishments/certificate/S9U79FWMLULQ"
 
 skills:
     - skill_name: "Office & Productivity Tools"
