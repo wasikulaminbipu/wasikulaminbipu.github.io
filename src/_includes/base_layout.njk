@@ -60,13 +60,13 @@
     {% include "navigation.njk" %}
     
     {% from "about_section.njk" import aboutSection %}
-    {{ aboutSection(about_section, social_links) }}
+    {{ aboutSection(about | default(about_section), socials | default(social_links)) }}
 
     {% from "education_section.njk" import eduSection %}
-    {{ eduSection(education_section) }}
+    {{ eduSection(education | default(education_section)) }}
 
     {% from "certifications_section.njk" import certificationsSection %}
-    {{ certificationsSection(certifications_section) }}
+    {{ certificationsSection(certifications | default(certifications_section)) }}
 
     {% from "skills_section.njk" import skills_section %}
     {{ skills_section(skills) }}

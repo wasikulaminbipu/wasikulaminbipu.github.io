@@ -1,6 +1,4 @@
-// 
-// Styles
-// 
+// Stylesheet Master Entry Point
 
 // Import variables
 @import "./variables.scss";
@@ -8,16 +6,17 @@
 // Import Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-
-// Import Bootstrap Icons
-// @import "bootstrap-icons/font/bootstrap-icons.scss";
-
-// Global CSS
-@import "./global.scss";
+// Base Styles
+@import "./base/root";
+@import "./base/base";
+@import "./base/typography";
 
 // Components
-@import "./components/sidenav.scss";
-@import "./components/icons.scss";
+@import "./components/sidenav";
+@import "./components/icons";
+@import "./components/glass-card";
+@import "./components/badges";
+@import "./components/social-icons";
 
 // Sections
-@import "./sections/resume-section.scss";
+@import "./sections/resume-section";

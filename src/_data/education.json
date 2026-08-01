@@ -1,0 +1,26 @@
+[
+  {
+    "degree_name": "Doctor of Veterinary Medicine(DVM)",
+    "duration_or_passingyear": "April,2015-April,2020",
+    "institution_or_board": "Bangabandhu Sheikh Mujibur Rahman Agricultural University, Gazipur, Bangladesh",
+    "subject_or_group": "Veterinary Medicine and Animal Science",
+    "result_type": "CGPA",
+    "point": "3.23"
+  },
+  {
+    "degree_name": "Higher-Secondary School Certificate (HSC)",
+    "duration_or_passingyear": "2014",
+    "institution_or_board": "Dhaka Board",
+    "subject_or_group": "Science",
+    "result_type": "GPA",
+    "point": "5.00"
+  },
+  {
+    "degree_name": "Secondary School Certificate (SSC)",
+    "duration_or_passingyear": "2012",
+    "institution_or_board": "Dhaka Board",
+    "subject_or_group": "Science",
+    "result_type": "GPA",
+    "point": "5.00"
+  }
+]

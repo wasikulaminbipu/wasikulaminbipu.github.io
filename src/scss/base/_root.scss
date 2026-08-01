@@ -1,0 +1,11 @@
+// Root Variables & Design Tokens
+:root {
+    --primary-color: #bd5d38;
+    --primary-hover: #9c4b2c;
+    --primary-light: rgba(189, 93, 56, 0.12);
+    --bg-glass: rgba(255, 255, 255, 0.85);
+    --border-glass: 1px solid rgba(225, 228, 232, 0.8);
+    --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+    --shadow-hover: 0 12px 32px rgba(189, 93, 56, 0.16), 0 4px 8px rgba(0, 0, 0, 0.04);
+    --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}

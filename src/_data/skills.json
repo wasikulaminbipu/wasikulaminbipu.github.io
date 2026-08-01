@@ -1,0 +1,37 @@
+[
+  {
+    "skill_name": "Office & Productivity Tools",
+    "list": [
+      { "icon_link": "word.svg", "title": "MS Word" },
+      { "icon_link": "excel.svg", "title": "MS Excel" },
+      { "icon_link": "powerpoint.svg", "title": "MS PowerPoint" },
+      { "icon_link": "planner.svg", "title": "MS Planner" },
+      { "icon_link": "latex.svg", "title": "Latex" },
+      { "icon_link": "rmd.svg", "title": "R Markdown" },
+      { "icon_link": "quarto.svg", "title": "Quarto" },
+      { "icon_link": "gforms.svg", "title": "Google Forms" }
+    ]
+  },
+  {
+    "skill_name": "Programming Languages & Tools",
+    "list": [
+      { "icon_link": "html5.svg", "title": "HTML 5" },
+      { "icon_link": "css3.svg", "title": "CSS 3" },
+      { "icon_link": "javascript.svg", "title": "JavaScript" },
+      { "icon_link": "typescript.svg", "title": "TypeScript" },
+      { "icon_link": "eleventy.svg", "title": "Eleventy" },
+      { "icon_link": "dart.svg", "title": "Dart" },
+      { "icon_link": "flutter.svg", "title": "Flutter" },
+      { "icon_link": "github.svg", "title": "Github" }
+    ]
+  },
+  {
+    "skill_name": "Data Analysis Tools",
+    "list": [
+      { "icon_link": "rprog.svg", "title": "R Program" },
+      { "icon_link": "tidyverse.png", "title": "Tidyverse" },
+      { "icon_link": "flexdashboard.png", "title": "Flex-Dashboard" },
+      { "icon_link": "shiny.webp", "title": "Shiny" }
+    ]
+  }
+]

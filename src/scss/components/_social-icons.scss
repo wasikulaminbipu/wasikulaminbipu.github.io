@@ -1,0 +1,25 @@
+// Social Icons Component
+.social-icons {
+    .social-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width: 3rem;
+        background-color: #edf2f7;
+        color: #4a5568;
+        border-radius: 50%;
+        font-size: 1.25rem;
+        margin-right: 0.75rem;
+        margin-bottom: 0.5rem;
+        transition: var(--transition-smooth);
+        text-decoration: none;
+
+        &:hover {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            transform: translateY(-3px) scale(1.08);
+            box-shadow: 0 6px 16px rgba(189, 93, 56, 0.3);
+        }
+    }
+}

@@ -1,0 +1,55 @@
+// Modular Typography & Headings
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headings-font-family;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+}
+
+h1 {
+    line-height: 1.1;
+    font-size: clamp(2.5rem, 5vw, 4.25rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    position: relative;
+    display: inline-block;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -0.4rem;
+        left: 0;
+        width: 3.5rem;
+        height: 4px;
+        background: var(--primary-color);
+        border-radius: 2px;
+    }
+}
+
+p.lead {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #4a5568;
+}
+
+.subheading {
+    font-family: $font-family-base;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #2d3748;
+}
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p.lead {
+        font-size: 1.05rem;
+    }
+}

@@ -1,0 +1,23 @@
+// Glass Card Component
+.glass-card {
+    background: #ffffff;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: var(--border-glass);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-subtle);
+    transition: var(--transition-smooth);
+    overflow: hidden;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-hover);
+        border-color: rgba(189, 93, 56, 0.3);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .glass-card {
+        padding: 1.25rem !important;
+    }
+}
