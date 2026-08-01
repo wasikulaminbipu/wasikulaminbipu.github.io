@@ -21,18 +21,18 @@
 }
 
 [data-theme="dark"] {
-    --primary-color: #f07449;
-    --primary-hover: #f38b65;
-    --primary-light: rgba(240, 116, 73, 0.22);
-    --bg-body: #080c14;
+    --primary-color: #ff7d45;
+    --primary-hover: #ff9a6e;
+    --primary-light: rgba(255, 125, 69, 0.25);
+    --bg-body: #040711;
     --text-main: #ffffff;
     --text-muted-custom: #cbd5e1;
-    --bg-glass: rgba(15, 23, 42, 0.90);
-    --border-glass: 1px solid rgba(255, 255, 255, 0.16);
-    --shadow-subtle: 0 8px 32px rgba(0, 0, 0, 0.6);
-    --shadow-hover: 0 16px 40px rgba(240, 116, 73, 0.28), 0 0 20px rgba(240, 116, 73, 0.18);
-    --input-bg: #0f172a;
-    --input-border: #475569;
+    --bg-glass: rgba(15, 23, 42, 0.94);
+    --border-glass: 1px solid rgba(255, 255, 255, 0.22);
+    --shadow-subtle: 0 8px 32px rgba(0, 0, 0, 0.7);
+    --shadow-hover: 0 16px 40px rgba(255, 125, 69, 0.35), 0 0 25px rgba(255, 125, 69, 0.25);
+    --input-bg: #0b1120;
+    --input-border: #64748b;
     --input-text: #ffffff;
     --icon-bg: #1e293b;
     --icon-color: #ffffff;
@@ -40,21 +40,25 @@
     --badge-light-text: #ffffff;
 
     .text-dark {
-        color: var(--text-main) !important;
+        color: #ffffff !important;
     }
     .text-muted, .text-secondary {
-        color: var(--text-muted-custom) !important;
+        color: #cbd5e1 !important;
+    }
+    .text-primary {
+        color: #ff7d45 !important;
     }
     .bg-light {
         background-color: var(--badge-light-bg) !important;
         color: var(--badge-light-text) !important;
+        border: 1px solid rgba(255, 255, 255, 0.25) !important;
     }
     .border {
-        border-color: rgba(255, 255, 255, 0.16) !important;
+        border-color: rgba(255, 255, 255, 0.22) !important;
     }
     hr {
-        border-color: rgba(255, 255, 255, 0.2) !important;
-        opacity: 0.35;
+        border-color: rgba(255, 255, 255, 0.25) !important;
+        opacity: 0.4;
     }
     .form-control, .form-select {
         background-color: var(--input-bg);
@@ -63,24 +67,31 @@
         &:focus {
             background-color: var(--input-bg);
             border-color: var(--primary-color);
-            box-shadow: 0 0 0 0.25rem rgba(240, 116, 73, 0.3);
+            box-shadow: 0 0 0 0.25rem rgba(255, 125, 69, 0.35);
             color: var(--input-text);
         }
     }
+    .role-badge {
+        color: #ff7d45;
+        background: rgba(255, 125, 69, 0.2);
+        border: 1px solid #ff7d45;
+    }
     #sideNav {
-        background: linear-gradient(180deg, #131924 0%, #080c14 100%) !important;
-        border-right: 1px solid rgba(255, 255, 255, 0.12);
+        background: linear-gradient(180deg, #0f172a 0%, #040711 100%) !important;
+        border-right: 2px solid rgba(255, 125, 69, 0.4);
 
         .navbar-nav .nav-item .nav-link {
             color: #ffffff;
 
             &:hover, &.active {
                 color: #ffffff;
-                background: rgba(240, 116, 73, 0.28);
-                border-left: 3px solid var(--primary-color);
+                background: rgba(255, 125, 69, 0.32);
+                border-left: 4px solid var(--primary-color);
+                box-shadow: inset 0 0 12px rgba(255, 125, 69, 0.25);
             }
         }
     }
 }
+
 
 
