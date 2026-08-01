@@ -1,6 +1,6 @@
 // Glass Card Component
 .glass-card {
-    background: #ffffff;
+    background: var(--bg-glass);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: var(--border-glass);

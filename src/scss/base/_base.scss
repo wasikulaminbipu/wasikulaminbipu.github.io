@@ -1,11 +1,12 @@
 // Base Body & Resets
 body {
     padding-top: $navbar-base-height;
-    color: #4a5568;
-    background-color: #f8fafc;
+    color: var(--text-main);
+    background-color: var(--bg-body);
     font-family: $font-family-base;
     scroll-behavior: smooth;
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @include media-breakpoint-up(lg) {

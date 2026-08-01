@@ -3,10 +3,10 @@
     --primary-color: #bd5d38;
     --primary-hover: #9c4b2c;
     --primary-light: rgba(189, 93, 56, 0.12);
-    --bg-body: #ffffff;
+    --bg-body: #f8fafc;
     --text-main: #343a40;
     --text-muted-custom: #6c757d;
-    --bg-glass: rgba(255, 255, 255, 0.85);
+    --bg-glass: #ffffff;
     --border-glass: 1px solid rgba(225, 228, 232, 0.8);
     --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
     --shadow-hover: 0 12px 32px rgba(189, 93, 56, 0.16), 0 4px 8px rgba(0, 0, 0, 0.04);
@@ -14,30 +14,41 @@
     --input-bg: #ffffff;
     --input-border: #ced4da;
     --input-text: #495057;
+    --icon-bg: #edf2f7;
+    --icon-color: #4a5568;
+    --badge-light-bg: #f1f5f9;
+    --badge-light-text: #334155;
 }
 
 [data-theme="dark"] {
-    --bg-body: #0d1117;
-    --text-main: #e6edf3;
-    --text-muted-custom: #8b949e;
-    --bg-glass: rgba(22, 27, 34, 0.85);
-    --border-glass: 1px solid rgba(48, 54, 61, 0.8);
-    --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.3);
+    --bg-body: #0b0f19;
+    --text-main: #f1f5f9;
+    --text-muted-custom: #94a3b8;
+    --bg-glass: rgba(18, 24, 38, 0.95);
+    --border-glass: 1px solid rgba(255, 255, 255, 0.08);
+    --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.4);
     --shadow-hover: 0 12px 32px rgba(189, 93, 56, 0.28);
-    --input-bg: #161b22;
-    --input-border: #30363d;
-    --input-text: #c9d1d9;
-}
+    --input-bg: #111827;
+    --input-border: #374151;
+    --input-text: #f3f4f6;
+    --icon-bg: #1e293b;
+    --icon-color: #cbd5e1;
+    --badge-light-bg: #1e293b;
+    --badge-light-text: #e2e8f0;
 
-body {
-    background-color: var(--bg-body);
-    color: var(--text-main);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-[data-theme="dark"] {
+    .text-dark {
+        color: var(--text-main) !important;
+    }
     .text-muted, .text-secondary {
         color: var(--text-muted-custom) !important;
+    }
+    .bg-light {
+        background-color: var(--badge-light-bg) !important;
+        color: var(--badge-light-text) !important;
+    }
+    hr {
+        border-color: rgba(255, 255, 255, 0.12) !important;
+        opacity: 0.25;
     }
     .form-control, .form-select {
         background-color: var(--input-bg);

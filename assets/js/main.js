@@ -4,31 +4,56 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Dark / Light Mode Theme Toggle
     // -------------------------------------------------------------
     const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeToggleBtnMobile = document.getElementById('themeToggleBtnMobile');
     const themeIcon = document.getElementById('themeIcon');
-    const currentTheme = localStorage.getItem('theme') || 
-        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+    function getPreferredTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            return savedTheme;
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
 
     function applyTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
+        
+        // Update Desktop Icon
         if (themeIcon) {
-            if (theme === 'dark') {
-                themeIcon.className = 'fa-solid fa-sun';
-            } else {
-                themeIcon.className = 'fa-solid fa-moon';
+            themeIcon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+        }
+        // Update Mobile Icon
+        if (themeToggleBtnMobile) {
+            const mobileIcon = themeToggleBtnMobile.querySelector('i');
+            if (mobileIcon) {
+                mobileIcon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
             }
         }
     }
 
-    applyTheme(currentTheme);
+    const initialTheme = getPreferredTheme();
+    applyTheme(initialTheme);
+
+    function toggleTheme() {
+        const activeTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(newTheme);
+    }
 
     if (themeToggleBtn) {
-        themeToggleBtn.addEventListener('click', () => {
-            const activeTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
-            applyTheme(newTheme);
-        });
+        themeToggleBtn.addEventListener('click', toggleTheme);
     }
+    if (themeToggleBtnMobile) {
+        themeToggleBtnMobile.addEventListener('click', toggleTheme);
+    }
+
+    // Dynamic OS Theme Preference Listener
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+            applyTheme(e.matches ? 'dark' : 'light');
+        }
+    });
 
     // -------------------------------------------------------------
     // 2. Active Scrollspy for Navigation Links
