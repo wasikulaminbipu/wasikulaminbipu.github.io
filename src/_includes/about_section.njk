@@ -12,7 +12,17 @@
             <span class="d-inline-flex align-items-center me-3"><i class="fa-solid fa-phone text-primary me-1"></i> {{ about_data.mobile }}</span>
             <a href={{"mailto:" + about_data.email}} class="text-decoration-none d-inline-flex align-items-center"><i class="fa-solid fa-envelope text-primary me-1"></i> {{ about_data.email | safe }}</a>
         </div>
-        <p class="lead mb-5">{{ about_data.about | safe }}</p>
+        <p class="lead mb-4">{{ about_data.about | safe }}</p>
+        
+        <div class="d-flex flex-wrap align-items-center gap-3 mb-5">
+            <a href="#contact" class="btn btn-primary px-4 py-2 fw-bold text-uppercase shadow-sm">
+                <i class="fa-solid fa-paper-plane me-2"></i> Get in Touch
+            </a>
+            <a href="mailto:wasikulaminbipu@gmail.com?subject=Resume Request" class="btn btn-outline-primary px-4 py-2 fw-bold text-uppercase">
+                <i class="fa-solid fa-file-arrow-down me-2"></i> Request / Download CV
+            </a>
+        </div>
+
         <div class="social-icons">
             {% from "macro/social_item.njk" import socialItem %}
             {{ socialItem("fa-linkedin", social_links.linkedin) }}
@@ -26,4 +36,3 @@
 </section>
 <hr class="m-0">
 {% endmacro %}
-

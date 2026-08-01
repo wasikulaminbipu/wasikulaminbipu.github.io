@@ -1,0 +1,20 @@
+// Theme switcher button & Dark Mode tweaks
+.theme-toggle-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    font-size: 1.1rem;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: rotate(15deg) scale(1.05);
+    }
+}

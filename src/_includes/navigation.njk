@@ -5,9 +5,14 @@
             <img src="{{ '/assets/profile.jpg' | url }}" alt="DR. Wasikul Amin Bipu" width="160" height="160" decoding="async" fetchpriority="high" loading="eager" class="img-fluid img-profile rounded-circle mx-auto mb-2"> 
         </span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle='collapse' data-bs-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation'>
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button id="themeToggleBtnMobile" class="theme-toggle-btn border-0 bg-transparent text-white p-0 me-2" type="button" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle='collapse' data-bs-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation'>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
 
     <div id="navbarResponsive" class="collapse navbar-collapse">
         <ul class="navbar-nav">
@@ -16,14 +21,12 @@
             {{ navItem("education") }}
             {{ navItem("certifications") }}
             {{ navItem("skills") }}
+            {{ navItem("contact") }}
         </ul>
+        <div class="mt-4 d-none d-lg-block text-center">
+            <button id="themeToggleBtn" class="theme-toggle-btn" type="button" title="Toggle Dark/Light Mode" aria-label="Toggle theme">
+                <i id="themeIcon" class="fa-solid fa-moon"></i>
+            </button>
+        </div>
     </div>
-    
 </nav>
-
-
-
-    
-
-
-    
