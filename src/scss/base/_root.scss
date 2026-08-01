@@ -39,14 +39,44 @@
     --badge-light-bg: #1e293b;
     --badge-light-text: #ffffff;
 
-    .text-dark {
+    .text-dark, .text-body {
         color: #ffffff !important;
     }
-    .text-muted, .text-secondary {
+    .text-muted {
         color: #cbd5e1 !important;
+    }
+    .text-secondary {
+        color: #e2e8f0 !important;
     }
     .text-primary {
         color: #ff7d45 !important;
+    }
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        color: #ffffff;
+    }
+    .subheading {
+        color: #ffffff !important;
+    }
+    p.lead {
+        color: #cbd5e1 !important;
+    }
+    a:not(.btn):not(.nav-link):not(.social-icon) {
+        color: #ff9a6e;
+        &:hover {
+            color: #ffffff;
+        }
+    }
+    .form-label, label {
+        color: #ffffff !important;
+    }
+    small, .small {
+        color: #e2e8f0;
+    }
+    .card-title {
+        color: #ffffff !important;
+    }
+    .card-subtitle {
+        color: #e2e8f0 !important;
     }
     .bg-light {
         background-color: var(--badge-light-bg) !important;
