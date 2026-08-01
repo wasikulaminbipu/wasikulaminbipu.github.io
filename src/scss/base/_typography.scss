@@ -29,15 +29,15 @@ h2 {
 
 p.lead {
     font-size: 1.2rem;
-    font-weight: 400;
-    color: #4a5568;
+    font-weight: 500;
+    color: var(--text-muted-custom);
 }
 
 .subheading {
     font-family: $font-family-base;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.25rem;
-    color: #2d3748;
+    color: var(--text-main);
 }
 
 @media (max-width: 575.98px) {

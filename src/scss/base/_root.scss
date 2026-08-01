@@ -1,43 +1,43 @@
-// Root Variables & Design Tokens
+// Root Variables & Design Tokens - High Contrast Enhanced
 :root {
-    --primary-color: #bd5d38;
-    --primary-hover: #9c4b2c;
-    --primary-light: rgba(189, 93, 56, 0.12);
+    --primary-color: #b04b25;
+    --primary-hover: #8f3b1b;
+    --primary-light: rgba(176, 75, 37, 0.14);
     --bg-body: #f8fafc;
-    --text-main: #343a40;
-    --text-muted-custom: #6c757d;
+    --text-main: #0f172a;
+    --text-muted-custom: #334155;
     --bg-glass: #ffffff;
-    --border-glass: 1px solid rgba(225, 228, 232, 0.8);
-    --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
-    --shadow-hover: 0 12px 32px rgba(189, 93, 56, 0.16), 0 4px 8px rgba(0, 0, 0, 0.04);
+    --border-glass: 1px solid rgba(148, 163, 184, 0.45);
+    --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.03);
+    --shadow-hover: 0 12px 32px rgba(176, 75, 37, 0.2), 0 4px 8px rgba(0, 0, 0, 0.06);
     --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     --input-bg: #ffffff;
-    --input-border: #ced4da;
-    --input-text: #495057;
-    --icon-bg: #edf2f7;
-    --icon-color: #4a5568;
-    --badge-light-bg: #f1f5f9;
-    --badge-light-text: #334155;
+    --input-border: #94a3b8;
+    --input-text: #0f172a;
+    --icon-bg: #e2e8f0;
+    --icon-color: #0f172a;
+    --badge-light-bg: #e2e8f0;
+    --badge-light-text: #0f172a;
 }
 
 [data-theme="dark"] {
-    --primary-color: #e06d43;
-    --primary-hover: #f07f55;
-    --primary-light: rgba(224, 109, 67, 0.18);
+    --primary-color: #f07449;
+    --primary-hover: #f38b65;
+    --primary-light: rgba(240, 116, 73, 0.22);
     --bg-body: #080c14;
-    --text-main: #f8fafc;
-    --text-muted-custom: #94a3b8;
-    --bg-glass: rgba(15, 23, 42, 0.78);
-    --border-glass: 1px solid rgba(255, 255, 255, 0.09);
-    --shadow-subtle: 0 8px 32px rgba(0, 0, 0, 0.5);
-    --shadow-hover: 0 16px 40px rgba(224, 109, 67, 0.22), 0 0 20px rgba(224, 109, 67, 0.12);
+    --text-main: #ffffff;
+    --text-muted-custom: #cbd5e1;
+    --bg-glass: rgba(15, 23, 42, 0.90);
+    --border-glass: 1px solid rgba(255, 255, 255, 0.16);
+    --shadow-subtle: 0 8px 32px rgba(0, 0, 0, 0.6);
+    --shadow-hover: 0 16px 40px rgba(240, 116, 73, 0.28), 0 0 20px rgba(240, 116, 73, 0.18);
     --input-bg: #0f172a;
-    --input-border: #1e293b;
-    --input-text: #f8fafc;
+    --input-border: #475569;
+    --input-text: #ffffff;
     --icon-bg: #1e293b;
-    --icon-color: #f8fafc;
-    --badge-light-bg: rgba(30, 41, 59, 0.85);
-    --badge-light-text: #e2e8f0;
+    --icon-color: #ffffff;
+    --badge-light-bg: #1e293b;
+    --badge-light-text: #ffffff;
 
     .text-dark {
         color: var(--text-main) !important;
@@ -50,11 +50,11 @@
         color: var(--badge-light-text) !important;
     }
     .border {
-        border-color: rgba(255, 255, 255, 0.1) !important;
+        border-color: rgba(255, 255, 255, 0.16) !important;
     }
     hr {
-        border-color: rgba(255, 255, 255, 0.1) !important;
-        opacity: 0.25;
+        border-color: rgba(255, 255, 255, 0.2) !important;
+        opacity: 0.35;
     }
     .form-control, .form-select {
         background-color: var(--input-bg);
@@ -63,23 +63,24 @@
         &:focus {
             background-color: var(--input-bg);
             border-color: var(--primary-color);
-            box-shadow: 0 0 0 0.25rem rgba(224, 109, 67, 0.25);
+            box-shadow: 0 0 0 0.25rem rgba(240, 116, 73, 0.3);
             color: var(--input-text);
         }
     }
     #sideNav {
         background: linear-gradient(180deg, #131924 0%, #080c14 100%) !important;
-        border-right: 1px solid rgba(255, 255, 255, 0.08);
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
 
         .navbar-nav .nav-item .nav-link {
-            color: rgba(248, 250, 252, 0.85);
+            color: #ffffff;
 
             &:hover, &.active {
                 color: #ffffff;
-                background: rgba(224, 109, 67, 0.22);
+                background: rgba(240, 116, 73, 0.28);
                 border-left: 3px solid var(--primary-color);
             }
         }
     }
 }
+
 
