@@ -2,27 +2,29 @@
 <section class="resume-section" id="certifications">
     <div class="resume-section-content">
         <h2 class="mb-5">Certifications</h2>
-        <div class="container text-center">
-        <div class="row justify-content-md-center">
+        <div class="row g-4">
         {% for certificate in cert_data.certificates_details %}
-            <a class="nav-link active card col-sm-12 col-md-3 me-2 mb-1" href="{{ certificate.certificate_url }}" target="new">
-                <div class="card-body">
-                    <h6 class="badge bg-primary justify-content-end">{{ certificate.issuer+": "+certificate.course_type }}</h6>
-                    <h5 class="card-title">{{ certificate.course_title }}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{ certificate.institute_name }}</h6>
-                    <ul class="list-group">
-                        <li class="list-group-item">Issued at: {{ certificate.issue_date }}</li>
-                        {% if certificate.exp_date !="" %}
-                            <li class="list-group-item">Expire at: {{ certificate.exp_date }}</li>
-                        {% endif %}
-                    </ul>
-                    {# <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> #}
-                    {# <a href="#" class="card-link">Card link</a> #}
-                    {# <a href="#" class="card-link">Another link</a> #}
-                </div>
-            </a>
+            <div class="col-12 col-md-6 col-lg-4">
+                <a class="text-decoration-none h-100 d-block" href="{{ certificate.certificate_url }}" target="_blank" rel="noopener noreferrer">
+                    <div class="glass-card h-100 p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary px-2 py-1 rounded-pill">{{ certificate.issuer }}: {{ certificate.course_type }}</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-muted fs-6"></i>
+                            </div>
+                            <h5 class="card-title text-dark fw-bold mb-2">{{ certificate.course_title }}</h5>
+                            <div class="text-muted small mb-3"><i class="fa-solid fa-building me-1"></i> {{ certificate.institute_name }}</div>
+                        </div>
+                        <div class="pt-3 border-top mt-2 d-flex justify-content-between align-items-center small text-secondary">
+                            <span><i class="fa-regular fa-calendar-check me-1 text-success"></i> {{ certificate.issue_date }}</span>
+                            {% if certificate.exp_date !="" %}
+                                <span class="text-warning"><i class="fa-regular fa-clock me-1"></i> Exp: {{ certificate.exp_date }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </a>
+            </div>
         {% endfor %}
-        </div>
         </div>
     </div>
 </section>

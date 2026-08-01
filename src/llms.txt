@@ -1,0 +1,38 @@
+# Dr. Wasikul Amin Bipu - Professional Profile
+
+> Registered Veterinarian (DVM), Data Analyst, and R Programmer based in Dhaka, Bangladesh.
+
+## Core Background
+- **Name**: Dr. Wasikul Amin Bipu
+- **Degree**: Doctor of Veterinary Medicine (DVM), Bangabandhu Sheikh Mujibur Rahman Agricultural University (BSMRAU)
+- **Primary Specializations**: Veterinary Medicine, Clinical Data Analysis, Statistical Analysis with R, Data Visualization, Flutter Cross-Platform Development
+- **Website**: https://wasikulaminbipu.github.io/
+- **ORCID**: https://orcid.org/0009-0001-4141-9954
+
+## Key Competencies & Technical Skills
+- **Data Analysis & Statistics**: R Language, Tidyverse, Flex-Dashboard, Shiny, R Markdown, Quarto, LaTeX, MS Excel
+- **Programming & Web**: R, Dart, Flutter, HTML5, CSS3, JavaScript, TypeScript, Eleventy (11ty), Git/GitHub
+- **Research & Writing**: Clinical Research, Systematic Review & Meta-Analysis, Scientific Writing
+
+## Certified Specializations & Courses
+- **Statistical Analysis with R for Public Health Specialization** — Imperial College London (Coursera)
+- **Data Visualization & Dashboarding with R Specialization** — Johns Hopkins University (Coursera)
+- **Writing in the Sciences (with Honors)** — Stanford University (Coursera)
+- **Understanding Clinical Research: Behind the Statistics (with Honors)** — University of Cape Town (Coursera)
+- **Introduction to Systematic Review and Meta-Analysis** — Johns Hopkins University (Coursera)
+
+## Social & Professional Links
+- **GitHub**: https://github.com/wasikulaminbipu
+- **LinkedIn**: https://linkedin.com/in/wasikulaminbipu
+- **ORCID**: https://orcid.org/0009-0001-4141-9954
+- **Facebook**: https://fb.com/wasikulaminbipu
+- **Twitter**: https://twitter.com/wasikulaminbip1
+
+## Contact Information
+- **Email**: wasikulaminbipu@gmail.com
+- **Mobile**: (+88) 01521-439342
+- **Location**: Dhaka, Bangladesh
+
+## Full Details
+For complete profile details, full certifications, and course credentials, visit:
+- Full LLM Summary: https://wasikulaminbipu.github.io/llms-full.txt

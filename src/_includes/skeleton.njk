@@ -4,14 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="DR. Wasikul Amin Bipu">
-    <meta name="keywords" content="Portfolio, pfolio, dr bipu, wasikul amin bipu">
-    <meta name="description" content="Description of Dr Bipu">
-    <title>{{ title }}</title>
-    {# Add Fav Icon #}
+    <meta name="keywords" content="Portfolio, pfolio, dr bipu, wasikul amin bipu, Veterinarian, Data Analyst, R Programmer, DVM, BSMRAU, R Shiny, Clinical Data">
+    <meta name="description" content="Official portfolio website of DR. Wasikul Amin Bipu - DVM (BSMRAU), Data Analyst, and R Programmer.">
+    <link rel="canonical" href="https://wasikulaminbipu.github.io/">
+    <title>{{ title | default("DR. Wasikul Amin Bipu | Veterinarian & Data Analyst Portfolio") }}</title>
+    
+    <!-- OpenGraph SEO -->
+    <meta property="og:title" content="{{ title | default("DR. Wasikul Amin Bipu | Veterinarian & Data Analyst Portfolio") }}">
+    <meta property="og:description" content="Official portfolio website of DR. Wasikul Amin Bipu, DVM (BSMRAU), Data Analyst & R Programmer.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wasikulaminbipu.github.io/">
+    <meta property="og:image" content="https://wasikulaminbipu.github.io/assets/img/profile.jpg">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title | default("DR. Wasikul Amin Bipu | Veterinarian & Data Analyst Portfolio") }}">
+    <meta name="twitter:description" content="Official portfolio website of DR. Wasikul Amin Bipu, DVM (BSMRAU), Data Analyst & R Programmer.">
+    <meta name="twitter:image" content="https://wasikulaminbipu.github.io/assets/img/profile.jpg">
+
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600;700&family=Saira+Extra+Condensed:wght@500;700&display=swap">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" type="text/css">
+    
+    <!-- FontAwesome CSS (Lightweight non-blocking) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Structured Data (JSON-LD Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "DR. Wasikul Amin Bipu",
+      "jobTitle": "Veterinarian & Data Analyst",
+      "url": "https://wasikulaminbipu.github.io/",
+      "almaMater": {
+        "@type": "CollegeOrUniversity",
+        "name": "Bangabandhu Sheikh Mujibur Rahman Agricultural University (BSMRAU)"
+      },
+      "knowsAbout": [
+        "Veterinary Medicine",
+        "Data Analysis",
+        "R Programming",
+        "Data Visualization",
+        "R Shiny & Flex-Dashboard",
+        "Clinical Research",
+        "Systematic Review & Meta-Analysis",
+        "Flutter App Development"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Doctor of Veterinary Medicine (DVM)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certificate",
+          "name": "Statistical Analysis with R for Public Health Specialization (Imperial College London)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certificate",
+          "name": "Data Visualization & Dashboarding with R Specialization (Johns Hopkins University)"
+        }
+      ],
+      "sameAs": [
+        "https://github.com/wasikulaminbipu",
+        "https://linkedin.com/in/wasikulaminbipu",
+        "https://orcid.org/0009-0001-4141-9954",
+        "https://fb.com/wasikulaminbipu",
+        "https://twitter.com/wasikulaminbip1"
+      ]
+    }
+    </script>
 </head>
 <body id="page-top">
     {# {% block nav %}{% endblock nav %} #}

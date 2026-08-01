@@ -1,0 +1,94 @@
+# Dr. Wasikul Amin Bipu - Full Professional Profile & Curriculum Vitae
+
+## Basic Information
+- **Full Name**: Dr. Wasikul Amin Bipu
+- **Title**: Registered Veterinarian (DVM), Data Analyst & R Programmer
+- **Location**: Dhaka, Bangladesh
+- **Email**: wasikulaminbipu@gmail.com
+- **Phone**: (+88) 01521-439342
+- **Website**: https://wasikulaminbipu.github.io/
+- **ORCID ID**: https://orcid.org/0009-0001-4141-9954
+- **GitHub**: https://github.com/wasikulaminbipu
+- **LinkedIn**: https://linkedin.com/in/wasikulaminbipu
+- **Facebook**: https://fb.com/wasikulaminbipu
+- **Twitter**: https://twitter.com/wasikulaminbip1
+
+---
+
+## Executive Summary
+Dr. Wasikul Amin Bipu is a registered veterinarian from Bangladesh with specialized training in data analysis, statistical modeling, and visualization using R. He develops interactive dashboards and data tools using R Shiny, Flex-Dashboard, Quarto, and R Markdown, and builds cross-platform mobile and web applications with Flutter and Dart. He also holds multiple honors certifications from top global universities in clinical research, medical writing, public health statistics, and systematic reviews.
+
+---
+
+## Education
+
+### Doctor of Veterinary Medicine (DVM)
+- **Institution**: Bangabandhu Sheikh Mujibur Rahman Agricultural University (BSMRAU), Gazipur, Bangladesh
+- **Duration**: April 2015 – April 2020
+- **Field of Study**: Veterinary Medicine and Animal Science
+- **Result**: CGPA 3.23 / 4.00
+
+### Higher Secondary Certificate (HSC)
+- **Board**: Dhaka Board
+- **Passing Year**: 2014
+- **Group**: Science
+- **Result**: GPA 5.00 / 5.00
+
+### Secondary School Certificate (SSC)
+- **Board**: Dhaka Board
+- **Passing Year**: 2012
+- **Group**: Science
+- **Result**: GPA 5.00 / 5.00
+
+---
+
+## Certifications & Professional Training
+
+1. **Statistical Analysis with R for Public Health Specialization**
+   - **Issuer**: Imperial College London (via Coursera)
+   - **Date**: June 2023
+   - **Verification Link**: https://www.coursera.org/account/accomplishments/specialization/certificate/F28MHV8QF22B
+
+2. **Data Visualization & Dashboarding with R Specialization**
+   - **Issuer**: Johns Hopkins University (via Coursera)
+   - **Date**: November 2023
+   - **Verification Link**: https://www.coursera.org/account/accomplishments/specialization/certificate/JEHMYTAF2Y4M
+
+3. **Writing in the Sciences (with Honors)**
+   - **Issuer**: Stanford University (via Coursera)
+   - **Date**: September 2023
+   - **Verification Link**: https://www.coursera.org/account/accomplishments/certificate/E9HEKG7FCS68
+
+4. **Understanding Clinical Research: Behind the Statistics (with Honors)**
+   - **Issuer**: University of Cape Town (via Coursera)
+   - **Date**: July 2023
+   - **Verification Link**: https://www.coursera.org/account/accomplishments/certificate/DAFVPS79CZJU
+
+5. **Introduction to Systematic Review and Meta-Analysis**
+   - **Issuer**: Johns Hopkins University (via Coursera)
+   - **Date**: September 2023
+   - **Verification Link**: https://www.coursera.org/account/accomplishments/certificate/S9U79FWMLULQ
+
+---
+
+## Technical Skills Inventory
+
+### Data Analysis & Statistical Tools
+- **R Programming**: Advanced statistical analysis, data cleaning, automated reporting
+- **Tidyverse**: Data manipulation with `dplyr`, `tidyr`, `ggplot2`, `purrr`
+- **Dashboards & Web Apps**: R Shiny, Flex-Dashboard
+- **Document Publishing**: R Markdown, Quarto, LaTeX, Google Forms
+
+### Software & Web Development
+- **Languages**: Dart, R, JavaScript, TypeScript, HTML5, CSS3
+- **Frameworks & Engines**: Flutter (Cross-platform app development), Eleventy (11ty)
+- **Version Control & Collaboration**: Git, GitHub, MS Planner, MS Excel, MS Word, MS PowerPoint
+
+---
+
+## Domain Expertise
+- Veterinary Science & Animal Health Management
+- Public Health Data Analysis & Biostatistics
+- Clinical Research Methodology & Meta-Analysis
+- Scientific & Medical Writing
+- Interactive Data Visualization & Dashboarding

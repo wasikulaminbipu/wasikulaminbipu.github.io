@@ -5,14 +5,27 @@
 #sideNav {
     padding-left: 1rem;
     padding-right: 1rem;
+    background: linear-gradient(180deg, #bd5d38 0%, #9c4b2c 100%) !important;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.08);
 
     .navbar-nav .nav-item .nav-link {
-        font-weight: 800;
-        letter-spacing: 0.05rem;
+        font-weight: 700;
+        letter-spacing: 0.08rem;
         text-transform: uppercase;
+        padding: 0.6rem 1.25rem;
+        margin: 0.2rem 0.75rem;
+        border-radius: 0.5rem;
+        color: rgba(255, 255, 255, 0.85);
+
+        &:hover, &.active {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateX(3px);
+        }
     }
 
     .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.3);
         &:focus {
             outline-color: lighten($primary, 15%);
         }
@@ -36,14 +49,20 @@
 
         .navbar-brand {
             display: flex;
-
             margin: auto auto 0;
-            padding: 0.5rem;
+            padding: 1.5rem 0.5rem 1rem;
 
             .img-profile {
-                max-width: 10rem;
-                max-height: 10rem;
-                border: 0.5rem solid fade-out($white, 0.8);
+                max-width: 9.5rem;
+                max-height: 9.5rem;
+                border: 0.4rem solid rgba(255, 255, 255, 0.3);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.04);
+                    border-color: rgba(255, 255, 255, 0.6);
+                }
             }
         }
 
@@ -57,7 +76,6 @@
 
             .navbar-nav {
                 flex-direction: column;
-
                 width: 100%;
 
                 .nav-item {
@@ -71,3 +89,4 @@
         }
     }
 }
+
