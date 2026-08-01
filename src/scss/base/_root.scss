@@ -21,19 +21,22 @@
 }
 
 [data-theme="dark"] {
-    --bg-body: #0b0f19;
-    --text-main: #f1f5f9;
+    --primary-color: #e06d43;
+    --primary-hover: #f07f55;
+    --primary-light: rgba(224, 109, 67, 0.18);
+    --bg-body: #080c14;
+    --text-main: #f8fafc;
     --text-muted-custom: #94a3b8;
-    --bg-glass: rgba(18, 24, 38, 0.95);
-    --border-glass: 1px solid rgba(255, 255, 255, 0.08);
-    --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.4);
-    --shadow-hover: 0 12px 32px rgba(189, 93, 56, 0.28);
-    --input-bg: #111827;
-    --input-border: #374151;
-    --input-text: #f3f4f6;
+    --bg-glass: rgba(15, 23, 42, 0.78);
+    --border-glass: 1px solid rgba(255, 255, 255, 0.09);
+    --shadow-subtle: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-hover: 0 16px 40px rgba(224, 109, 67, 0.22), 0 0 20px rgba(224, 109, 67, 0.12);
+    --input-bg: #0f172a;
+    --input-border: #1e293b;
+    --input-text: #f8fafc;
     --icon-bg: #1e293b;
-    --icon-color: #cbd5e1;
-    --badge-light-bg: #1e293b;
+    --icon-color: #f8fafc;
+    --badge-light-bg: rgba(30, 41, 59, 0.85);
     --badge-light-text: #e2e8f0;
 
     .text-dark {
@@ -46,8 +49,11 @@
         background-color: var(--badge-light-bg) !important;
         color: var(--badge-light-text) !important;
     }
+    .border {
+        border-color: rgba(255, 255, 255, 0.1) !important;
+    }
     hr {
-        border-color: rgba(255, 255, 255, 0.12) !important;
+        border-color: rgba(255, 255, 255, 0.1) !important;
         opacity: 0.25;
     }
     .form-control, .form-select {
@@ -57,7 +63,23 @@
         &:focus {
             background-color: var(--input-bg);
             border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(224, 109, 67, 0.25);
             color: var(--input-text);
         }
     }
+    #sideNav {
+        background: linear-gradient(180deg, #131924 0%, #080c14 100%) !important;
+        border-right: 1px solid rgba(255, 255, 255, 0.08);
+
+        .navbar-nav .nav-item .nav-link {
+            color: rgba(248, 250, 252, 0.85);
+
+            &:hover, &.active {
+                color: #ffffff;
+                background: rgba(224, 109, 67, 0.22);
+                border-left: 3px solid var(--primary-color);
+            }
+        }
+    }
 }
+

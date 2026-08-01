@@ -6,7 +6,7 @@ body {
     font-family: $font-family-base;
     scroll-behavior: smooth;
     line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
 @include media-breakpoint-up(lg) {
@@ -16,6 +16,7 @@ body {
     }
 }
 
-a, button, .nav-link {
+a, button, .nav-link, .glass-card, .badge {
     transition: var(--transition-smooth);
 }
+
