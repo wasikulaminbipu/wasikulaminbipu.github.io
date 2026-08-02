@@ -139,4 +139,81 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // -------------------------------------------------------------
+    // 4. Interactive Skill Category Filter
+    // -------------------------------------------------------------
+    const filterButtons = document.querySelectorAll('#skillFilterGroup [data-filter]');
+    const categoryBlocks = document.querySelectorAll('.skill-category-block');
+
+    if (filterButtons.length > 0 && categoryBlocks.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+                categoryBlocks.forEach(block => {
+                    if (filter === 'all' || block.getAttribute('data-category') === filter) {
+                        block.style.display = 'block';
+                        block.style.opacity = '1';
+                    } else {
+                        block.style.display = 'none';
+                        block.style.opacity = '0';
+                    }
+                });
+            });
+        });
+    }
+
+    // -------------------------------------------------------------
+    // 5. Certificate Modal Dynamic Data Binding
+    // -------------------------------------------------------------
+    const certModal = document.getElementById('certModal');
+    if (certModal) {
+        certModal.addEventListener('show.bs.modal', (event) => {
+            const card = event.relatedTarget;
+            if (!card) return;
+
+            const title = card.getAttribute('data-cert-title') || '';
+            const issuer = card.getAttribute('data-cert-issuer') || '';
+            const institute = card.getAttribute('data-cert-institute') || '';
+            const date = card.getAttribute('data-cert-date') || '';
+            const url = card.getAttribute('data-cert-url') || '#';
+
+            const modalTitle = certModal.querySelector('#certModalTitle');
+            const modalIssuer = certModal.querySelector('#certModalIssuer');
+            const modalInstitute = certModal.querySelector('#certModalInstitute');
+            const modalDate = certModal.querySelector('#certModalDate');
+            const modalUrl = certModal.querySelector('#certModalUrl');
+
+            if (modalTitle) modalTitle.textContent = title;
+            if (modalIssuer) modalIssuer.textContent = issuer;
+            if (modalInstitute) modalInstitute.textContent = institute;
+            if (modalDate) modalDate.textContent = date;
+            if (modalUrl) modalUrl.setAttribute('href', url);
+        });
+    }
+
+    // -------------------------------------------------------------
+    // 6. Smooth Entrance Animations on Scroll
+    // -------------------------------------------------------------
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const animateObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-fade-in');
+                animateObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.glass-card, .timeline-item, .resume-section-content h2').forEach(el => {
+        animateObserver.observe(el);
+    });
 });
+

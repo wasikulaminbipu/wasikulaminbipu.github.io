@@ -6,28 +6,50 @@
         {% set certList = cert_data.certificates_details or cert_data %}
         {% for certificate in certList %}
             <div class="col-12 col-md-6 col-lg-4">
-                <a class="text-decoration-none h-100 d-block" href="{{ certificate.certificate_url }}" target="_blank" rel="noopener noreferrer">
-                    <div class="glass-card h-100 p-4 d-flex flex-column justify-content-between">
-                        <div>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="badge bg-primary px-2 py-1 rounded-pill">{{ certificate.issuer }}: {{ certificate.course_type }}</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square text-muted fs-6"></i>
-                            </div>
-                            <h5 class="card-title text-body fw-bold mb-2">{{ certificate.course_title }}</h5>
-                            <div class="text-muted small mb-3"><i class="fa-solid fa-building me-1"></i> {{ certificate.institute_name }}</div>
+                <div class="glass-card h-100 p-4 d-flex flex-column justify-content-between cert-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#certModal" data-cert-title="{{ certificate.course_title }}" data-cert-issuer="{{ certificate.issuer }}" data-cert-institute="{{ certificate.institute_name }}" data-cert-type="{{ certificate.course_type }}" data-cert-date="{{ certificate.issue_date }}" data-cert-url="{{ certificate.certificate_url }}">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-primary px-2 py-1 rounded-pill">{{ certificate.issuer }}: {{ certificate.course_type }}</span>
+                            <i class="fa-solid fa-expand text-muted fs-6" title="Click for details"></i>
                         </div>
-                        <div class="pt-3 border-top mt-2 d-flex justify-content-between align-items-center small text-secondary">
-                            <span><i class="fa-regular fa-calendar-check me-1 text-success"></i> {{ certificate.issue_date }}</span>
-                            {% if certificate.exp_date !="" %}
-                                <span class="text-warning"><i class="fa-regular fa-clock me-1"></i> Exp: {{ certificate.exp_date }}</span>
-                            {% endif %}
-                        </div>
+                        <h5 class="card-title text-body fw-bold mb-2">{{ certificate.course_title }}</h5>
+                        <div class="text-muted small mb-3"><i class="fa-solid fa-building me-1"></i> {{ certificate.institute_name }}</div>
                     </div>
-                </a>
+                    <div class="pt-3 border-top mt-2 d-flex justify-content-between align-items-center small text-secondary">
+                        <span><i class="fa-regular fa-calendar-check me-1 text-success"></i> {{ certificate.issue_date }}</span>
+                        {% if certificate.exp_date !="" %}
+                            <span class="text-warning"><i class="fa-regular fa-clock me-1"></i> Exp: {{ certificate.exp_date }}</span>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
         {% endfor %}
         </div>
     </div>
 </section>
+
+<!-- Certificate Details Modal -->
+<div class="modal fade" id="certModal" tabindex="-1" aria-labelledby="certModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow glass-modal">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title fw-bold text-primary" id="certModalLabel"><i class="fa-solid fa-award me-2"></i> Certificate Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body py-2">
+        <h4 id="certModalTitle" class="fw-bold mb-3 text-body"></h4>
+        <div class="mb-2"><strong>Issuer:</strong> <span id="certModalIssuer" class="badge bg-primary ms-1"></span></div>
+        <div class="mb-2"><strong>Institution:</strong> <span id="certModalInstitute" class="text-secondary ms-1"></span></div>
+        <div class="mb-2"><strong>Issue Date:</strong> <span id="certModalDate" class="text-success ms-1"></span></div>
+      </div>
+      <div class="modal-footer border-top-0 d-flex justify-content-between">
+        <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+        <a id="certModalUrl" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm rounded-pill px-3">
+          <i class="fa-solid fa-external-link me-1"></i> View Official Credential
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 <hr class="m-0">
 {% endmacro %}

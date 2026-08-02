@@ -18,22 +18,27 @@
 
     <!-- OpenGraph SEO -->
     <meta property="og:title" content="{{ title | default("DR. Wasikul Amin Bipu | Veterinarian & Data Analyst Portfolio") }}">
-    <meta property="og:description" content="Official portfolio website of DR. Wasikul Amin Bipu, DVM (BSMRAU), Data Analyst & R Programmer.">
+    <meta property="og:description" content="Official portfolio website of DR. Wasikul Amin Bipu - Doctor of Veterinary Medicine (BSMRAU), Data Analyst & R Programmer specializing in Health Analytics and Clinical Data.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://wasikulaminbipu.github.io/">
     <meta property="og:image" content="https://wasikulaminbipu.github.io/assets/profile.jpg">
+    <meta property="og:site_name" content="DR. Wasikul Amin Bipu Portfolio">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ title | default("DR. Wasikul Amin Bipu | Veterinarian & Data Analyst Portfolio") }}">
-    <meta name="twitter:description" content="Official portfolio website of DR. Wasikul Amin Bipu, DVM (BSMRAU), Data Analyst & R Programmer.">
+    <meta name="twitter:description" content="Official portfolio website of DR. Wasikul Amin Bipu - Doctor of Veterinary Medicine (BSMRAU), Data Analyst & R Programmer.">
     <meta name="twitter:image" content="https://wasikulaminbipu.github.io/assets/profile.jpg">
+    <meta name="twitter:site" content="@wasikulaminbip1">
+    <meta name="twitter:creator" content="@wasikulaminbip1">
 
-    <!-- Preconnect & Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconnect & Resource Preloads -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600;700&family=Saira+Extra+Condensed:wght@500;700&display=swap">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="{{ '/styles/styles.css' | url }}">
     
     <!-- FontAwesome CSS (Lightweight non-blocking) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -46,19 +51,66 @@
       "name": "DR. Wasikul Amin Bipu",
       "jobTitle": "Veterinarian & Data Analyst",
       "url": "https://wasikulaminbipu.github.io/",
-      "almaMater": {
+      "image": "https://wasikulaminbipu.github.io/assets/profile.jpg",
+      "email": "mailto:wasikulaminbipu@gmail.com",
+      "telephone": "+8801738392093",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gazipur",
+        "addressCountry": "Bangladesh"
+      },
+      "alumniOf": {
         "@type": "CollegeOrUniversity",
-        "name": "Bangabandhu Sheikh Mujibur Rahman Agricultural University (BSMRAU)"
+        "name": "Bangabandhu Sheikh Mujibur Rahman Agricultural University (BSMRAU)",
+        "sameAs": "https://bsmrau.edu.bd/"
       },
       "knowsAbout": [
         "Veterinary Medicine",
         "Data Analysis",
         "R Programming",
+        "Health Analytics",
+        "Clinical Research",
         "Data Visualization",
         "R Shiny & Flex-Dashboard",
-        "Clinical Research",
         "Systematic Review & Meta-Analysis",
+        "Epidemiology",
         "Flutter App Development"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Doctor of Veterinary Medicine (DVM)",
+          "recognizedBy": {
+            "@type": "CollegeOrUniversity",
+            "name": "BSMRAU"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certificate",
+          "name": "Statistical Analysis with R for Public Health Specialization",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Imperial College London"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certificate",
+          "name": "Data Visualization & Dashboarding with R Specialization",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Johns Hopkins University"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://github.com/wasikulaminbipu",
+        "https://linkedin.com/in/wasikulaminbipu",
+        "https://orcid.org/0009-0001-4141-9954",
+        "https://fb.com/wasikulaminbipu",
+        "https://twitter.com/wasikulaminbip1"
       ]
     }
     </script>
